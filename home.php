@@ -1,29 +1,29 @@
 <style>
   table {
     border-collapse: separate !important;
-    border-spacing: 0 !important;
+    border-spacing: 1 !important;
   }
   table tr th,
   table tr td {
-    border-right: 3px solid #ffffff !important;
-    border-bottom: 3px solid #ffffff !important;
+    border-right: 3px #ffffff !important;
+    border-bottom: 3px #ffffff !important;
   }
   table tr th:first-child,
   table tr td:first-child {
-    border-left: 3px solid #ffffff !important;
+    border-left: 3px #ffffff !important;
   }
   table tr th {
-    border-top: 3px solid #ffffff !important;
+    border-top: 3px #ffffff !important;
   }
 
   /* top-left border-radius */
   table tr:first-child th:first-child {
-    border-top-left-radius: 0.5rem !important;
+    border-top-left-radius: 0rem !important;
   }
 
   /* top-right border-radius */
   table tr:first-child th:last-child {
-    border-top-right-radius: 0.5rem !important;
+    border-top-right-radius: 0rem !important;
   }
 
   /* bottom-left border-radius */
@@ -165,7 +165,7 @@
   </div>
 
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Modal</button>
-  <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top: Tugas 2">Tooltps</button>
+  <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top: Tugas 2">Tooltips</button>
   <button type="button" class="btn btn-success" id="myAlert">Alert</button>
   <button type="button" class="btn btn-danger" id="myBtn">Toast</button>
 

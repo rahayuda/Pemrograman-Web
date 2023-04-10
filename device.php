@@ -32,12 +32,12 @@ $agent = $_SERVER['HTTP_USER_AGENT'];
 $jenis_browser="";
 
 foreach ($array_browsers as $key => $value) {
- 
-  if (strpos($agent, $key) !== false) {
-    $jenis_browser = $value;
-    break;
-  }   
-  
+
+	if (strpos($agent, $key) !== false) {
+		$jenis_browser = $value;
+		break;
+	}   
+
 }
 
 //echo "Browser: ".$jenis_browser;
@@ -82,4 +82,22 @@ $akhir= $akhir - $awal;
 $sub_kalimat = substr($agent,$awal,$akhir);
 //echo "Perangkat: " . $sub_kalimat;
 $device = $sub_kalimat;
+?>
+
+<?php
+include "koneksi.php";
+
+$slc 	= "select * from visitors where ip='$IP'";
+$d 		= mysqli_query($con,$slc);
+$dt 	= mysqli_num_rows($d);
+
+if($dt==0)
+{
+	$rstmgn		= "alter table visitors AUTO_INCREMENT = 1";
+	$mqrstmgn	= mysqli_query($con,$rstmgn);
+
+	$ist 		= mysqli_query($con,"insert into visitors (ip,device,os,osv,browser) VALUES ('$IP','$device','$os','$osv','$browser')");
+}
+
+$upd 		= mysqli_query($con,"update visitors set ip='$IP',device='$device',os='$os',osv='$osv',browser='$browser' where ip='$IP'");
 ?>

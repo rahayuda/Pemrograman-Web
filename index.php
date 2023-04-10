@@ -73,15 +73,16 @@
             <li class="nav-item">
               <a class="nav-link active" href="index.php?page=profile">Profile</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.php?page=visitors">Visitors</a>
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Tugas
+                Data
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Tugas 1</a></li>
-                <li><a class="dropdown-item" href="#">Tugas 2</a></li>
-                <li><a class="dropdown-item" href="#">Tugas 3</a></li>
-                <li><a class="dropdown-item" href="#">Tugas 4</a></li>
+                <li><a class="dropdown-item" href="index.php?page=data">Mahasiswa</a></li>
+                <li><a class="dropdown-item" href="index.php?page=chart"">Chart</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Other</a></li>
               </ul>
@@ -89,12 +90,10 @@
             <li class="nav-item">
               <a class="nav-link" href="index.php?page=contact">Contact</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.php?page=about">About</a>
-            </li>
           </ul>
           <form class="d-flex" role="login">
-            <button class="btn btn-outline-success" type="submit">Login</button>
+            <a class="btn btn-outline-success" href="login.php" role="button">Login</a>&nbsp;
+            <a class="btn btn-outline-primary" href="register.php" role="button">Register</a>&nbsp;
           </form>
         </div>
       </div>
@@ -119,9 +118,15 @@
         case 'contact':
         include "contact.php";
         break;  
-        case 'about':
-        include "about.php";
-        break;      
+        case 'visitors':
+        include "visitors.php";
+        break; 
+        case 'data':
+        include "data.php";
+        break; 
+        case 'chart':
+        include "chart.php";
+        break;    
       }
     }
     else
@@ -133,7 +138,8 @@
 
   </div>
 
-  <footer class="py-3 my-4" id="footer" >
+  <br>
+  <footer class="relative-bottom">
     <div style="background-color:#284059;">
       <ul class="nav justify-content-center border-bottom navbar navbar-expand-lg" data-bs-theme="dark">
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
