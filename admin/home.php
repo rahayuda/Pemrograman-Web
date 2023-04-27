@@ -12,6 +12,7 @@ include "koneksi.php";
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
+<div class="table-responsive">
 <table id="table_id" class="table table-borderless table-striped">
   <thead>
     <tr>
@@ -46,6 +47,7 @@ include "koneksi.php";
     <?php } ?>
   </tbody>
 </table>
+</div>
 
 <!-- jquery datatable -->
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>

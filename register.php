@@ -11,78 +11,61 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>  
 
     <style>
-        html,
-        body {
-            height: 100%;
-        }
-        #content {
-            margin: auto;
-            flex: 1 0 auto;
-            min-height: 67.5%;
-            width: 30%;
-            padding: 10px;
-        }
-        #footer {
-            flex-shrink: none;
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-30%, -30%);
+            transform: translate(-50%, -50%);
+            width: 400px;
         }
     </style>
 
 </head>
 
-<div class="relative-top">
-    <header>
-        <div style="background-color:#90D8BF; height: 100px;">
-            <b class="nav justify-content-center navbar">&nbsp;</b>
-        </div>
-        <div style="background-color:#284059;">
-            <ul class="nav justify-content-center border-bottom navbar navbar-expand-lg" data-bs-theme="dark">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">&nbsp;</a></li>
-            </ul>
-        </div>
-    </header>
-</div>
+<div class="container">
+    <div class="center border border-primary p-3">
 
-<div id="content">
-    <div style="height: 200px"></div>
-    <table class="table table-borderless " >
-        <tbody>
-            <form action="register.php" method="post">
-                <tr>
-                  <tr> 
-                    <td width="20%">Nama</td>
-                    <td><input class="form-control form-control" type="text" name="nama"></td>
-                </tr>
-                <tr> 
-                    <td>Username</td>
-                    <td><input class="form-control form-control" type="text" name="username"></td>
-                </tr>
-                <tr> 
-                    <td>Password</td>
-                    <td><input class="form-control form-control" type="password" name="password"></td>
-                </tr>
-                <tr> 
-                    <td></td>
-                    <td>
-                        <input class="btn btn-primary btn" type="submit" name="submit" value="Register">&nbsp;
-                        <a class="btn btn-outline-success" href="login.php" role="button">Login</a>
-                    </td>
-                </tr>
-            </form>
-        </tbody>
-    </table>
-</div>
+        <form action="register.php" method="post">
+            <div class="row m-2">
+                <div class="col-3">
+                    <label>Nama</label>
+                </div>
+                <div class="col-9">
+                    <input class="form-control form-control" type="text" name="nama">
+                </div>
+            </div>
 
-<div class="relative-bottom" id="footer">
-    <footer>
-        <div style="background-color:#284059;">
-            <ul class="nav justify-content-center border-bottom navbar navbar-expand-lg" data-bs-theme="dark">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">&nbsp;</a></li>
-            </ul>
-        </div>
-        <div style="background-color:#90D8BF; height: 100px;">
-            <b class="nav justify-content-center navbar">&nbsp;</b>
-        </div>
-    </footer>
+            <div class="row m-2">
+                <div class="col-3">
+                    <label>Username</label>
+                </div>
+                <div class="col-9">
+                    <input class="form-control form-control" type="text" name="username">
+                </div>
+            </div>
+
+            <div class="row m-2">
+                <div class="col-3">
+                    Password
+                </div>
+                <div class="col-9">
+                    <input class="form-control form-control" type="password" name="password">
+                </div>
+            </div>
+
+            <div class="row m-2 mt-4">
+                <div class="col-3">
+
+                </div>
+                <div class="col-9">
+                  <input class="btn btn-primary btn" type="submit" name="submit" value="Register">                  
+                  <a class="btn btn-outline-success" href="login.php" role="button">Login</a>
+              </div>
+          </div>
+      </form>
+
+  </div>
 </div>
 
 

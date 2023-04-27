@@ -37,11 +37,11 @@
   }  
 </style>
 
-  <style>
-    .alert {
-      display: none;
-    }
-  </style>
+<style>
+  .alert {
+    display: none;
+  }
+</style>
 
 <br>
 <h2><b>Home</b></h2>
@@ -60,67 +60,69 @@
   <h2><b>Timeline</b></h2>
   <br>
 
-  <table class="table table-borderless table-striped">
-    <thead style="background-color:#284059;" class="text-white">
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Nama</th>
-        <th scope="col">Link</th>
-      </tr>
-    </thead>
-    <tbody >
-      <tr>
-        <td scope="row">1</td>
-        <td >Tugas 1. Menyusun ringkasan dalam bentuk makalah tentang topik - topik utama pada pemrograman web</td>
-        <td><button type="button" class="btn btn btn-outline-danger btn-sm" >view</button></td>
-      </tr>
-      <tr>
-        <td scope="row">2</td>
-        <td>Tugas 2. Membuat halaman index dengan HTML</td>
-        <td><a class="btn btn-success btn-sm" href="tugas-2/index.html" role="button">view</a></td>
-      </tr>
-      <tr>
-        <td scope="row">3</td>
-        <td>Tugas 3. Membuat halaman index dengan HTML, CSS dan Java Script</td>
-        <td><a class="btn btn-success btn-sm" href="#" role="button">view</a></td>
-      </tr>
-      <tr>
-        <td scope="row">4</td>
-        <td>Tugas 4. Membuat Website dengan Beberapa Halaman</td>
-        <td><a class="btn btn-primary btn-sm" href="#" role="button">view</a></td>
-      </tr>
-      <tr>
-        <td scope="row">5</td>
-        <td>Tugas 5. Membuat Form pada Website</td>
-        <td><a class="btn btn-primary btn-sm" href="#" role="button">view</a></td>
-      </tr>
-      <tr>
-        <td scope="row">6</td>
-        <td>Tugas 6. Membuat Login dan Register</td>
-        <td><a class="btn btn-primary btn-sm" href="#" role="button">view</a></td>
-      </tr>
-      <tr>
-        <td scope="row">7</td>
-        <td>Tugas 7. Artikel Ilmiah</td>
-        <td><a class="btn btn-primary btn-sm" href="#" role="button">view</a></td>
-      </tr>
-      <tr>
-        <td scope="row">8</td>
-        <td>Tugas 8. Aplikasi Website dengan Basis Data</td>
-        <td><a class="btn btn-primary btn-sm" href="#" role="button">view</a></td>
-      </tr>
-      <tr>
-        <td scope="row">9</td>
-        <td>UTS. </td>
-        <td><a class="btn btn-primary btn-sm" href="#" role="button">view</a></td>
-      </tr>
-      <tr>
-        <td scope="row">10</td>
-        <td>UAS. </td>
-        <td><a class="btn btn-primary btn-sm" href="#" role="button">view</a></td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="table-responsive">
+    <table class="table table-borderless table-striped">
+      <thead style="background-color:#284059;" class="text-white">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nama</th>
+          <th scope="col">Link</th>
+        </tr>
+      </thead>
+      <tbody >
+        <tr>
+          <td scope="row">1</td>
+          <td >Tugas 1. Menyusun ringkasan dalam bentuk makalah tentang topik - topik utama pada pemrograman web</td>
+          <td><button type="button" class="btn btn btn-outline-danger btn-sm" >view</button></td>
+        </tr>
+        <tr>
+          <td scope="row">2</td>
+          <td>Tugas 2. Membuat halaman index dengan HTML</td>
+          <td><a class="btn btn-success btn-sm" href="tugas-2/index.html" role="button">view</a></td>
+        </tr>
+        <tr>
+          <td scope="row">3</td>
+          <td>Tugas 3. Membuat halaman index dengan HTML, CSS dan Java Script</td>
+          <td><a class="btn btn-success btn-sm" href="#" role="button">view</a></td>
+        </tr>
+        <tr>
+          <td scope="row">4</td>
+          <td>Tugas 4. Membuat Website dengan Beberapa Halaman</td>
+          <td><a class="btn btn-primary btn-sm" href="#" role="button">view</a></td>
+        </tr>
+        <tr>
+          <td scope="row">5</td>
+          <td>Tugas 5. Membuat Form pada Website</td>
+          <td><a class="btn btn-primary btn-sm" href="#" role="button">view</a></td>
+        </tr>
+        <tr>
+          <td scope="row">6</td>
+          <td>Tugas 6. Membuat Login dan Register</td>
+          <td><a class="btn btn-primary btn-sm" href="#" role="button">view</a></td>
+        </tr>
+        <tr>
+          <td scope="row">7</td>
+          <td>Tugas 7. Artikel Ilmiah</td>
+          <td><a class="btn btn-primary btn-sm" href="#" role="button">view</a></td>
+        </tr>
+        <tr>
+          <td scope="row">8</td>
+          <td>Tugas 8. Aplikasi Website dengan Basis Data</td>
+          <td><a class="btn btn-primary btn-sm" href="#" role="button">view</a></td>
+        </tr>
+        <tr>
+          <td scope="row">9</td>
+          <td>UTS. </td>
+          <td><a class="btn btn-primary btn-sm" href="#" role="button">view</a></td>
+        </tr>
+        <tr>
+          <td scope="row">10</td>
+          <td>UAS. </td>
+          <td><a class="btn btn-primary btn-sm" href="#" role="button">view</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
   <br>
   <h2><b>Javascript</b></h2>

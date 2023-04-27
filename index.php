@@ -126,7 +126,7 @@
         break; 
         case 'chart':
         include "chart.php";
-        break;    
+        break;   
       }
     }
     else

@@ -10,7 +10,7 @@
 	<hr class="my-4">
 </div>
 
-<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+<canvas id="myChart" style="width:100%;max-width:50%"></canvas>
 
 
 <?php 
@@ -24,12 +24,18 @@ $data_mob 	= mysqli_num_rows($mobile);
 $warehouse 	= mysqli_query($con,"select * from mahasiswa where kuliah = 'warehouse'");
 $data_ware 	= mysqli_num_rows($warehouse);
 
+$sosiologi 	= mysqli_query($con,"select * from mahasiswa where kuliah = 'Sosiologi'");
+$data_sos 	= mysqli_num_rows($sosiologi);
+
+$ian 		= mysqli_query($con,"select * from mahasiswa where kuliah = 'Ilmu Administrasi Negara'");
+$data_ian 	= mysqli_num_rows($ian);
+
 ?>
 
 <script>
-	var xValues = ["Website", "Mobile", "Warehouse"];
-	var yValues = [<?php echo $data_web; ?>, <?php echo $data_mob; ?>, <?php echo $data_ware; ?>];
-	var barColors = ["blue", "green","yellow"];
+	var xValues = ["Website", "Mobile", "Warehouse", "Sosiologi", "Administrasi"];
+	var yValues = [<?php echo $data_web; ?>, <?php echo $data_mob; ?>, <?php echo $data_ware; ?>, <?php echo $data_sos; ?>, <?php echo $data_ian; ?>];
+	var barColors = ["blue", "green","yellow", "Red", "Orange"];
 
 	new Chart("myChart", {
 		type: "bar",

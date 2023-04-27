@@ -12,6 +12,7 @@ include "koneksi.php";
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
+<div class="table-responsive">
 <table id="table_id" class="table table-borderless table-striped">
   <thead>
     <tr>
@@ -27,11 +28,13 @@ include "koneksi.php";
   <tbody>
     <?php
     $list = mysqli_query($con,"select * from mahasiswa");
+    $no = 0;
     while($row = mysqli_fetch_assoc($list))
     {
+      $no = $no + 1;
       ?>
       <tr>
-        <th scope="row"><?php echo $row['id']; ?></th>
+        <th scope="row"><?php echo $no; ?></th>
         <td><?php echo $row['nim']; ?></td>
         <td><?php echo $row['nama']; ?></td>
         <td><?php echo $row['alamat']; ?></td>
@@ -39,12 +42,13 @@ include "koneksi.php";
         <td><?php echo $row['waktu']; ?></td>
         <td>
           <a class="btn btn-warning btn-sm" href="index.php?page=edit&id=<?php echo $row['id']; ?>" role="button">Edit</a>
-          <a class="btn btn-danger btn-sm" href="delete.php?id=<?php echo $row['id']; ?>" role="button">Delete</a>
+          <a class="btn btn-danger btn-sm" href="index.php?page=delete&id=<?php echo $row['id']; ?>" role="button">Delete</a>
         </td>
       </tr>
     <?php } ?>
   </tbody>
 </table>
+</div>
 
 <!-- jquery datatable -->
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>

@@ -11,74 +11,60 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>  
 
 	<style>
-		html,
-		body {
-			height: 100%;
-		}
-		#content {
-			margin: auto;
-			flex: 1 0 auto;
-			min-height: 67.5%;
-			width: 30%;
-			padding: 10px;
-		}
-		#footer {
-			flex-shrink: none;
+		.center {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-ms-transform: translate(-30%, -30%);
+			transform: translate(-50%, -50%);
+			width: 400px;
 		}
 	</style>
 
 </head>
 
-<div class="relative-top">
-	<header>
-		<div style="background-color:#90D8BF; height: 100px;">
-			<b class="nav justify-content-center navbar">&nbsp;</b>
-		</div>
-		<div style="background-color:#284059;">
-			<ul class="nav justify-content-center border-bottom navbar navbar-expand-lg" data-bs-theme="dark">
-				<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">&nbsp;</a></li>
-			</ul>
-		</div>
-	</header>
+<div class="container">
+	<div class="center border border-primary p-3">
+
+		<form action="cek_login.php" method="post" onSubmit="return validasi()">
+			<div class="row m-2">
+				<div class="col-3">
+					<label>Username</label>
+				</div>
+				<div class="col-9">
+					<input type="text" name="username" id="username" class="form-control"/>
+				</div>
+			</div>
+
+			<div class="row m-2">
+				<div class="col-3">
+					<label>Password</label>
+				</div>
+				<div class="col-9">
+					<input type="password" name="password" id="password" class="form-control"/>
+				</div>
+			</div>
+
+			<div class="row m-2 mt-4">
+				<div class="col-3">
+
+				</div>
+				<div class="col-9">
+					<input type="submit" value="Login" class="btn btn-success">
+					<a class="btn btn-outline-primary ml-2" href="register.php" role="button">Register</a>
+				</div>
+			</div>
+		</form>
+
+	</div>
 </div>
 
-<div id="content">
-	<div style="height: 200px"></div>
-		<table class="table table-borderless " >
-			<tbody>
-				<form action="cek_login.php" method="post" onSubmit="return validasi()">
-					<tr>
-						<td width="20%"><label>Username</label></td>    			
-						<td ><input type="text" name="username" id="username" class="form-control"/></td>
-					</tr>
-					<tr>
-						<td><label>Password</label></td>    			
-						<td><input type="password" name="password" id="password" class="form-control"/></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>
-							<input type="submit" value="Login" class="btn btn-success">&nbsp;
-							<a class="btn btn-outline-primary" href="register.php" role="button">Register</a>
-						</td>
-					</tr>
-				</form>
-			</tbody>
-		</table>
-</div>
 
-<div class="relative-bottom" id="footer">
-	<footer>
-		<div style="background-color:#284059;">
-			<ul class="nav justify-content-center border-bottom navbar navbar-expand-lg" data-bs-theme="dark">
-				<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">&nbsp;</a></li>
-			</ul>
-		</div>
-		<div style="background-color:#90D8BF; height: 100px;">
-			<b class="nav justify-content-center navbar">&nbsp;</b>
-		</div>
-	</footer>
-</div>
+
+
+
+
+
 
 <script type="text/javascript">
 	function validasi() {

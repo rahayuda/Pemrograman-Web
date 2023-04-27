@@ -1,11 +1,6 @@
 <?php
 session_start();
-
-// cek apakah user telah login, jika belum login maka di alihkan ke halaman login
-if($_SESSION['status'] !="login"){
-	header("location:../login.php");
-}
-
+include "session.php";
 ?>
 
 <!doctype html>
@@ -94,7 +89,8 @@ if($_SESSION['status'] !="login"){
 		<c><br><h2 style="color: white;"><b><?php echo $_SESSION['username']; ?></b></h2><hr style="color: white;"></c>
 		<a class="active" href="index.php?page=home">Home</a>
 		<a href="index.php?page=mahasiswa">Mahasiswa</a>
-		<a href="index.php?page=logout" class="fixed-bottom">Logout</a>
+		<a href="index.php?page=request">Request</a>
+		<a href="index.php?page=logout">Logout</a>
 	</div>
 
 	<div class="content">
@@ -116,6 +112,15 @@ if($_SESSION['status'] !="login"){
 				case 'edit':
 				include "edit.php";
 				break;  
+				case 'delete':
+				include "delete.php";
+				break;
+				case 'request':
+				include "request.php";
+				break; 
+				case 'up-request':
+				include "up-request.php";
+				break; 
 				case 'logout':
 				include "logout.php";
 				break;   
